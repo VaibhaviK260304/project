@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Gurunanak Fashion Mall</title>
+</head>
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
+
+<script src="index.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+<style>
+    .home_img_container{
+        height: 100vh;
+        width: 100%;
+        background: url("shop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .logo{
+        border-radius: 50%;
+    }
+    .quote{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: left;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/homepage.webp");
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    .quote1{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: right;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/quote-img.jpg") center no-repeat;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    @keyframes quoteAnimation {
+        0%   {opacity: 1;}
+        50%  {transform: translatex(-5%) rotate(5deg); opacity: 1;}
+    }
+    @keyframes quote1Animation{
+        0%   {opacity: 1;}
+        50%  {transform: translatex(-5%) rotate(5deg); opacity:1 ;}
+    }
+    .quote2{
+        max-width: 650px;
+        animation: quote1Animation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: left;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/quote2.jpeg")center  no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    .quote3{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: right;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/360_F_651499051_tQQimfoC1v8z8cD7m0mQjXElxJrMFppt.jpg");
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    .quote4{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: left;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/home.png");
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    .card1{
+        margin: 10px 10px;
+        width: 40%;
+        background-image: url("img/home/for\ boys.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+    }
+    .card2{
+        margin: 10px 10px;
+        width: 40%;
+        background-image: url("img/home/for\ girls.avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75);
+        height: auto;
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+
+    }
+    .card3{
+        margin: 10px 10px;
+        width: 40%;
+        background-image: url("img/home/yoga.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        justify-content: space-around;
+        align-items: end;
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+    }
+    .card4{
+        margin: 10px 10px;
+        width: 40%;
+        background-image: url("img/home/gym.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.75) ;
+        height: auto;
+        justify-content: space-around;
+        align-items: end;
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+    }
+    .btn-color{
+        background-color: gold;
+    }
+    .start{
+        color: white;
+        font-size: 70px;
+    }
+    .start1{
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .div-color{
+        background-image: url("./img/home/bg1.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .div-color1{
+        background-image: url("./img/home/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bookmark-white{
+        float: right;
+        cursor: pointer;
+    }
+    .text-color{
+        color: rgb(20,253,30);
+    }
+    .p1{
+        color: tomato;
+    }
+    .p2{
+        color: white;
+    }
+    .p3{
+        color: rgb(39, 39, 270);
+    }
+    .p4{
+        color: whitesmoke;
+    }
+    .p5{
+        color: greenyellow;
+    }
+    .exp{
+        background-image: url("./img/home/ms.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;  
+    }
+    .mission{
+        background-image: url("img/home/bg2..avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;  
+    }
+    .owner{
+        height: 100vh;
+        background-color: #A9C9FF;
+        background-image: -webkit-linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        background-image: -moz-linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        background-image: -o-linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    }
+    .sale{
+        padding: 5px;
+        margin: 0px;
+        color: white;
+    }
+    .nav{
+        color: white;
+    }
+    @media (max-width: 1000px) {
+    .lm,.card{
+        margin: 0;
+        font-size: small;
+    }
+}
+</style>
+<body>
+    <div class="home_img_container">
+        <nav class="navbar navbar-expand-lg  nav-color">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="logo.png" class="logo" height="70px" img-bg-warning ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 "  href="about.html" id="about" onmouseover="about()">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 " href="contact.html" id="contact" onmouseover="contact()">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 " href="feedback.html" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+            <div class="container">
+            <div class="row justify-content-center align-items-start">
+                <div class="col-md-6 left text-start mt-5">
+                    <h1 style="font-family:'Times New Roman', Times, serif;" class="start">श्री GURUNANAK FASHION MALL</h1>
+                </div>
+            </div>
+            </div><br/><br/><br/><br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 left text-start mt-5">
+                        <b><h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="start1">       </h1></b>
+                    </div>
+            </div>
+            </div>
+    </div><br/>
+
+    <div class="div-color sc">
+        <h1 class="text-center sale text-bg-warning"><u><b>SALE!!!</b></u></h1>
+        <h1 class="text-center sale text-bg-dark"><u><b>SALE!!</b></u></h1>
+        <h1 class="text-center sale text-bg-danger"><u><b>SALE!</b></u></h1><br/>
+        <div class="container d-flex flex-direction justify-content-around">
+    <div class="card card1 text-bg-dark">
+        <img src="./img/home/for boys.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark" onclick="toggleBookmark()"/>
+          <h1 class="card-title">KURTI</h1>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <a href="./pages/workout-plans.html" class="btn btn-color lm">Visit</a>
+        </div>
+      </div>
+    <div class="card card3 text-bg-dark">
+        <img src="./img/home/yoga.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark2" onclick="toggleBookmark2()"/>
+            <h1 class="card-title">SHIRT</h1>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="./pages/ideal_weight.html" class="btn btn-color lm">Visit</a>
+        </div>
+    </div>
+    <div class="card card4 text-bg-dark">
+        <img src="./img/home/gym.webp" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark3" onclick="toggleBookmark3()"/>
+            <h1 class="card-title">SAREE</h1>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="./pages/gym_facilities.html" class="btn btn-color lm">Visit</a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="div-3 exp">
+        <h1 class="text-center text-bg-warning">30 YEARS OF EXPERIENCE</h1>
+        <div class="container d-flex  flex-wrap justify-content-around">
+            <section>
+
+            </section>
+        </div>
+    </div>
+    <div class="mission">
+    <b><h2 class="text-center text-bg-warning">OUR MISSION</h2></b>
+    <br/><p class="text-center p1 fs-5">"Our mission is to empower individuals to reach their full potential through fitness and nutrition."</p>
+        <p class="text-center p2 fs-5"><br/>"We are committed to providing high-quality fitness and nutrition services to help our clients achieve their health and wellness goals."</p>
+        <p class="text-center p3 fs-5"><br/>"Our mission is to create a supportive and inclusive community where everyone can feel welcome and motivated to improve their health and fitness."</p>
+        <p class="text-center p4 fs-5"><br/>"We believe that fitness and nutrition are essential components of a healthy and fulfilling life, and we are dedicated to helping our clients make positive changes that will last a lifetime."</p>
+        <p class="text-center p5 fs-5"><br/>"Our mission is to help our clients build strength, confidence, and resilience through fitness and nutrition, and to empower them to live their best lives."</p>
+    <br/></div>
+    <div>
+        <h1 class="text-center text-bg-warning">OWNER </h1>
+    <section class="flex-wrap justify-content-center d-flex owner">
+    <div class="d-flex justify-content-around flex-wrap">
+    <div class="expert mx-5 justify-content-around">
+        <img src="./img/home/trainer1.jpg" height="200px" alt="">
+        <h3>VUSHAL CHOUDHARY</h3>
+        <p class="fs-6">Guhayavarman - Chennai,<br/>Tamil Nadu : Internationally<br/>Certified Personal Trainer<br/> and Corrective Functional<br/>ResistanceProfessional Expert<br/>Private Fitness Coach in<br/>Chennai.Specializing in Fitness<br/>Science and Nutrition.</p>
+        <button class="btn btn-color" id="button" onclick="toggleDescription(this)">Show Description</button>
+    </div>
+    </div><hr/>
+</section></div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>The major activity of Shree Gurunanak Cloth Stores is Services,
+               Sub-classified into Retail trade except of motor vehicles and  
+               motorcycles and is primarily engaged in the Retail sale of readymade 
+               garments hosiery goods other articles of  clothing and  clothing accessories 
+               such as gloves ties braces etc.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="./pages/gym_facilities.html"></a></li>
+                <li><a href="./pages/main_guide_page.html"></a></li>
+                <li><a href="/personal-training"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> <a href="mailto:info@fitnesssite.com">info@fitnesssite.com</a>
+                    <br><strong>Phone:</strong><a href="tel:+919422833188">+919422833188</a><br>
+                    <strong>Address: </strong>9PJW+GWF, near shree krishna gaushala, Vivekanand Nagar, Tumsar, Maharashtra, India <br>
+                    441912</p>
+            </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/vishal.choudhary.9634/" id="img">Facebook</a></li>
+                <li><a href="https://www.instagram.com/shreegurunanakcloth/" id="img2">Instagram</a></li>
+            </ul>
+        </div>
+    </div><br/>
+    <div class="footer-copyright">
+        <p>&copy; 2023 Fitness Site. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+    
+</script>
+</body>
+</html> 
