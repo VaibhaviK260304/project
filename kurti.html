@@ -1,21 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/kurti.css"/>
+
+    <script src="./js/kurti.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
     <style>
         body{
             background-color:  #f7f7f7;
+            align-items: center;
         }
         .kurti{
             height: 150px;
@@ -108,98 +111,197 @@
             font-size: 15px;
             align-items: center;
         }
+        .btn{
+            color:black;
+            cursor: pointer;
+            background-color: skyblue ;
+            border: none;
+            padding: 10px 16px;
+            font-size:13px;
+            transition: all 0.2s ease-in-out;
+            outline: none;
+            border-radius: 20px;
+        }
+        .btn-quantity{
+            height: 20px;
+        }
+        .btn-container-quantity{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg text-bg-secondary nav-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" class="logo" height="70px" img-bg-warning ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fs-5 "  href="about.html" id="about" onmouseover="about()">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5 " href="contact.html" id="contact" onmouseover="contact()">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5 " href="feedback.html" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-bg-warning">BEST KURTI SALE</h1>
     <div class="parent">
         <div class="child">
             <img src="./img/kurti1.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Cotton Indigo Floral Print Kurta</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Cotton Indigo Floral Print Kurta</p></b>
+            <p><del>Rs.1,499</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.699/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec7()"/>
+                <span class="no" id="qty7">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc7()" />
+            </div>
+    
+            <p id="quantity-text7">Quantity : 1 x 699</p>
+            <p id="total-text7">Total : 699</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti2.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Cotton Indigo Stripe Print Kurta</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Cotton Indigo Stripe Print Kurta</p></b>
+            <p><del>Rs.1,199</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.499/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec6()"/>
+                <span class="no" id="qty6">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc6()" />
+            </div>
+    
+            <p id="quantity-text6">Quantity : 1 x 499</p>
+            <p id="total-text6">Total : 499</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti3.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Liva (Rayon) Maroon Floral Print Kurta</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Liva (Rayon) Maroon Floral Print Kurta</p></b>
+            <p><del>Rs.1,799</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.650/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec5()"/>
+                <span class="no" id="qty5">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc5()" />
+            </div>
+    
+            <p id="quantity-text5">Quantity : 1 x 650</p>
+            <p id="total-text5">Total : 650</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti4.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Liva (Rayon) White Floral Print Kurta</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Liva (Rayon) White Floral Print Kurta</p></b>
+            <p><del>Rs.1,799</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.650/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec4()"/>
+                <span class="no" id="qty4">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc4()" />
+            </div>
+    
+            <p id="quantity-text4">Quantity : 1 x 650</p>
+            <p id="total-text4">Total : 650</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti5.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Purple)</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Purple)</p></b>
+            <p><del>Rs.2,999</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.599/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec()"/>
+                <span class="no" id="qty">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc()" />
+            </div>
+    
+            <p id="quantity-text">Quantity : 1 x 599</p>
+            <p id="total-text">Total : 599</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti6.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Red)</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Red)</p></b>
+            <p><del>Rs.2,999</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.599/-</p>
+            <div class="btn-container-quantity">
+                    <img src="./img/minus.png" class="btn-quantity" onclick="dec1()"/>
+                    <span class="no" id="qty1">1</span>
+                    <img src="./img/plus.png" class="btn-quantity"  onclick="inc1()" />
+            </div>
+    
+            <p id="quantity-text1">Quantity : 1 x 599</p>
+            <p id="total-text1">Total : 599</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
         <div class="child">
             <img src="./img/kurti7.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Yellow)</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Paisley Cotton Blend Straight Kurta (Yellow)</p></b>
+            <p><del>Rs.2,999</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.599/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec2()"/>
+                <span class="no" id="qty2">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc2()" />
+            </div>
+    
+            <p id="quantity-text2">Quantity : 1 x 599</p>
+            <p id="total-text2">Total : 599</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
-        
+
         <div class="child">
             <img src="./img/kurti8.png" class="kurti-img" height="350px"/>
-            <h6 class="kurti-title">Women Printed Viscose Rayon Anarkali Kurta (Dark Green)</h6>
-            <p><del>Rs.</del></p>
+            <b><p class="kurti-title">Women Printed Viscose Rayon Anarkali Kurta (Dark Green)</p></b>
+            <p><del>Rs.3,999</del> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.599/-</p>
+            <div class="btn-container-quantity">
+                <img src="./img/minus.png" class="btn-quantity" onclick="dec3()"/>
+                <span class="no" id="qty3">1</span>
+                <img src="./img/plus.png" class="btn-quantity"  onclick="inc3()" />
+            </div>
+    
+            <p id="quantity-text3">Quantity : 1 x 599</p>
+            <p id="total-text3">Total : 599</p> 
+
+            <button type="button" class="btn">
+                Buy Now
+            </button>
         </div>
 
     </div>        
-        <script>
-            function inc()
-            {
-                const quantitytext  = document.getElementById("qty");
-                const showquantity = document.getElementById("quantity-text");
-                const  totaltext = document.getElementById("total-text") ;
 
-                let quantity = parseInt(quantitytext.innerText);
-
-                if(quantity<10)
-                {
-                    quantitytext.innerText = ++quantity;
-                }
-                else{
-                    alert("Maximum Quantity Reached!");
-                }
-                showquantity.innerText=`${quantity}x400`;
-                totaltext.innerText= `Total :  ${quantity*400}`;
-            }
-            function dec()
-            {
-                const quantitytext  = document.getElementById("qty");
-                const showquantity = document.getElementById("quantity-text");
-                const  totaltext = document.getElementById("total-text") ;
-
-                let quantity = parseInt(quantitytext.innerText);
-                
-                if(quantity > 1)
-                {
-                quantitytext.innerText = --quantity;
-                }
-                else
-                {
-                    alert('Quantity cannot be less than 1');
-                }
-                showquantity.innerText=`${quantity}x400`;
-                totaltext.innerText= `Total :  ${quantity*400}`;
-            }
-        </script>
     </div>
 </body>
 </html>
